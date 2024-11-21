@@ -1,0 +1,61 @@
+:root {
+    --primary-color: rgb(247, 145, 0);
+    --text-color: #fff;
+    --shadow-color: #000;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+text-align: center;
+    max-width: 800px;
+}
+#progress-bar::-webkit-progress-value {
+   background: var(--text-color);
+   transition: width 0.4s ease-in-out;}
+#progress-bar {
+    appearance: none;
+    width: 80%;
+    height: 10px;
+    
+    margin: -25px 0;
+}
+
+.cont i {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 5;
+
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    background: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.cont  span:hover, .border-change {
+    border-color: var(--text-color);
+}
+
+
+
+#progress-bar::-webkit-progress-value {
+    background: var(--text-color);
+    transition: all 0.4s ease-in-out;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background: var(--primary-color);
+}
+.marker{
+    margin: 0 auto;
+text-align: center;
+}

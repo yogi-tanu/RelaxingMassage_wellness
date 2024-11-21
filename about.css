@@ -1,0 +1,554 @@
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black color with 50% opacity */
+  /* Add other styles as needed */
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* For mobile devices */
+  .hero_section {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .left_div,
+  .right_div {
+    width: 80%;
+    padding: 0;
+    font-size: 8vw;
+  }
+
+  .right_div h1 {
+    font-size: 8vw;
+  }
+}
+
+.blink::after {
+  content: '!';
+  color: rgb(247, 145, 0);
+  animation: blink-animation 3s infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+}
+
+.container_about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  animation: slidein 3s;
+}
+.container_Billing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 60vw;
+  margin: 0 auto;
+  animation: slidein 3s;
+}
+.container_service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 80vw;
+  margin: 0 auto;
+ 
+  margin-bottom: 5vh;
+  animation: slidein 3s;
+}
+/* Box */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid rgb(247, 145, 0);
+  box-shadow: 0px 2px 9px 0px rgba(247, 141, 32, 0.50);
+  transition: transform 0.3s ease;
+  animation: slidein 3s;
+  background-color: #fff;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.skill-title {
+  margin-top: -5vh;
+  font-weight: bolder;
+}
+.service-title {
+  font-size: 30px;
+  margin-left: 45%;
+  font-family: cursive;
+}
+.service-main {
+  font-size: 30px;
+  margin-left: 35%;
+  font-family: cursive;
+}
+.service-acupuncture {
+  font-size: 30px;
+  margin-left: 45%;
+  font-family: cursive;
+}
+.service-promotions {
+  font-size: 30px;
+  margin-left: 30%;
+  font-family: cursive;
+}
+.service-tag {
+  width: 500px;
+  height: 60px;
+  margin-left: 45%;
+  
+}
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+
+}.box img {
+  position: relative;
+  top: -8vh;
+  box-shadow: 0px 2px 9px 0px rgba(247, 141, 32, 0.50);
+  border-radius: 10vh;
+  height: 10vh;
+  background-color: white;
+  padding: 1vw;
+  z-index: 99;
+
+}
+/* Outlets Section */
+.outlets-section h2 {
+  margin: 5vh;
+  text-align: center;
+  color: #333;
+  font-size: 8vh;
+  text-decoration: underline  rgb(247, 145, 0);
+  text-underline-offset: 3vh;
+}
+
+.outlets {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.outlet {
+  flex: 1 0 calc(80% - 20px);
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.outlet img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.outlet img:hover {
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+@media (max-width:786px) {
+  .bhaap{
+    height: 50px;
+  }
+  .hide{
+display: none;
+  }
+
+}
+/* Media Query for Desktop */
+@media screen and (min-width: 768px) {
+
+
+  .outlet {
+    flex: 1 0 calc(28% - 20px);
+
+  }
+
+ 
+}
+
+
+
+.container_about ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container_about li {
+  margin-bottom: 20px;
+}
+
+.container_about p {
+  margin: 5vh 0;
+}
+
+.container_about img {
+  margin: 0;
+  width: 10vh;
+
+}
+
+.para {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: Poppins;
+  font-size: 3vh;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 2 rem;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  animation: slidein 3s;
+
+}
+
+@media (max-width: 768px) {
+  .container_about {
+    display: block;
+    margin: 10vh auto;
+    width: 70vw;
+  }
+
+  .box {
+    width: 100vw;
+    margin-top: 10vh;
+  }
+
+  .box img {
+    margin: 0 auto;
+
+  }
+}
+
+
+
+
+
+/* Base styles */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  /* Ensure the video doesn't exceed the container */
+  height: 90vh;
+}
+
+#myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* This will crop the video to fit the container */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 90vw;
+  font-family: 'Poppins';
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.overlay-heading {
+  position: absolute;
+  top: 30%;
+  font-family: 'Sora';
+  left: 50%;
+  width: 90vw;
+  font: bolder;
+  font-size: 10vh;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .video-container {
+    width: 100%;
+    /* Full width on mobile devices */
+  }
+
+  .box img {
+    position: relative;
+    top: -8vh;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  }
+
+  .skill-title {
+    margin-top: -7vh;
+  }
+}
+
+.heading {
+  font-size: 10vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;1,600&display=swap');
+
+/* parallex effect */
+.example {
+  background-image: url("./assets/Rectangle\ 569.png");
+  min-height: 50vh;
+  /* Create a parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Archivo, sans-serif;
+  font-weight: 600;
+  margin-bottom: 10vh;
+  color: white;
+  text-align: center;
+  top: 40%;
+}
+
+.parallax-content h1 {
+  margin-top: 7vh;
+}
+
+.example1 {
+  background-image: url("./assets/image\ 162.png");
+  height: 50vh;
+  /* Create a parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 10%;
+  font-size: 8vh;
+}
+
+.progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 10vh;
+  width: 70%;
+}
+
+.progress-item_combo {
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  width: 100%;
+  /* Adjusted to fit two items per row */
+}
+
+.progress-item {
+  margin-top: 10px;
+  width: calc(50% - 20px);
+  /* Adjusted width to account for padding */
+  padding: 5px;
+  margin-top: 10vh;
+}
+
+/* Individual progress bars */
+.progress-bar {
+  height: 20px;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* Adds inner shadow for depth */
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  background: #F68121;
+  background-size: 50px 50px;
+  /* Size of the stripes */
+  transition: width 0.5s ease;
+  /* Animation for progress bar */
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .progress-item {
+    width: 100%;
+    /* Full width on mobile */
+  }
+}
+
+
+
+/* CSS for desktop */
+.container_section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 80vw;
+  margin: 10vh auto;
+  margin-bottom: 10vh;
+  gap: 0;
+  /* This removes the gap between grid items */
+}
+
+.container_section #img{
+  width: 90%;
+}
+
+.box1,
+.box2 {
+  margin-top: 20px;
+  flex: 1;
+  font-size: large;
+  font-weight: 400;
+  /* Each box will take up equal space */
+}
+
+
+.box1 img{
+  animation: rotation 4s infinite linear;
+}@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.box2 h1 {
+  padding-bottom: 15px;
+  font-family: Sora;
+  font-style: normal;
+
+  font-weight: 600;
+  line-height: 40px;
+}
+.bhaap{
+  width: 1.5rem;
+}
+/* CSS for mobile */
+@media (max-width: 768px) {
+  .container_section {
+
+    display: block;
+  }
+ 
+
+
+
+  .box1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+ /* If you have specific child elements, you can target them like this */
+.container_section>div {
+  margin: 0;
+  /* This ensures there is no margin on the child elements */
+}
+}
+
+@media (max-width: 800px) {
+
+  .bhaap{
+    height: 60px;
+    width: auto;
+  }
+}

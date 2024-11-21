@@ -1,0 +1,342 @@
+:root {
+  --wesbos: #ffc600;
+}
+
+.menu {
+  display: none;
+
+}
+
+.menu--is-visible {
+  display: grid;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+
+  }
+}
+
+.item__header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 2vh;
+
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.item__title {
+  /* letter-spacing: 2px; */
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.item__dots {
+  flex: 1;
+  border-bottom: 1px dashed #aaa;
+  margin: 0 15px;
+}
+
+.item__price {
+  /* color: var(--wesbos); */
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.item__description {
+  margin-bottom: 40px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.button {
+  margin: 5px 15px;
+  padding: 10px 20px;
+  border: 1px solid var(--wesbos);
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.highlight {
+  display: block;
+  background: rgb(247, 145, 0);
+  color: white;
+  border-radius: 3px;
+  z-index: -1;
+  padding: 1vh;
+  transition: 0.24s;
+}
+
+.heading {
+  display: block;
+  text-align: center;
+  color: rgb(247, 145, 0);
+  border-radius: 3px;
+  z-index: -1;
+  transition: 0.24s;
+  margin-top: 0;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10vh;
+  font-weight: bold;
+}
+
+
+
+.wrapper {
+
+  background-image: url(./background.webp);
+
+  max-width: 80vw;
+  border-radius: 20px;
+  margin: 0vh auto;
+  margin-bottom: 10vh;
+  padding: 20px;
+  padding-top: 10vh;
+  z-index: 99999999999;
+}
+
+.menu-subtitle {
+  text-align: center;
+  margin-top: -3vh;
+}
+
+.menu-description {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .buttons-container {
+    margin-bottom: 60px;
+  }
+
+  #food-container {
+    display: flex;
+    /* Use Flexbox layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap as needed */
+    gap: 50px;
+    /* Optional: space between the columns */
+    font-weight: bolder;
+    justify-content: center;
+  }
+
+  #food-container>div {
+    flex: 1;
+    /* Each child div will grow equally */
+    min-width: calc(50% - 50px);
+    /* Set minimum width for two columns, subtracting the gap */
+    /* Additional styles for the child divs */
+  }
+
+  .food-type {
+    max-width: 30vw;
+  }
+
+
+}
+
+.wrapper img{
+  position: relative;
+
+}
+
+#tea1 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+
+}
+
+#food1 {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+
+}
+
+#tea1 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+
+}
+
+#tea1 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+
+}
+
+#tea4 {
+  position: absolute;
+  right: 0;
+  top: 100vh;
+   z-index: -1;
+
+}
+
+#tea5 {
+  position: absolute;
+  left: 0;
+   top: 120vh;
+
+  z-index: -1;
+
+}
+
+#tea6 {
+  position: absolute;
+  left: -4vh;
+   top: 170vh;
+
+  transform: translateX(15%);
+  z-index: -1;
+
+}
+
+#food2 {
+  position: absolute;
+  top: 80vh;
+  left: 0;
+   transform: translateX(10%);
+  z-index: -1;
+
+}
+
+#food3 {
+  position: absolute;
+  top: 80vh;
+  right: 0;
+   z-index: -1;
+
+}
+
+#food4 {
+  position: absolute;
+  top: 150vh;
+  right: 0;
+   z-index: -1;
+
+}
+
+#food5 {
+  position: absolute;
+  top: 200vh;
+  right: 0;
+   z-index: -1;
+
+}
+
+#food6 {
+  position: absolute;
+  top: 220vh;
+  left: 0;
+   transform: translateX(10%);
+  z-index: -1;
+
+}
+
+#text1 {
+  position: absolute;
+  top: 100vh;
+  right: 0;
+  z-index: -1;
+
+}
+.wrapper img{
+width: 10vw;
+filter: blur(1px);
+
+}
+body {
+  align-items: center;
+  background-image: url("./background.jpg");
+  background-repeat: repeat;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+
+}
+
+
+
+.formobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .buttons-container {
+    margin-bottom: 60px;
+
+  }
+
+  .bhaap {
+    height: 80px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .formobile {
+    display: block
+  }
+
+  #food-container {
+    display: block;
+    /* Use Flexbox layout */
+    width: 100%;
+  }
+.wrapper{
+  max-width: 90vw;
+}
+  .food-type {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .wrapper img {
+    height: 10vh;
+    width: auto;
+    margin-top: 20vh;
+  }
+}

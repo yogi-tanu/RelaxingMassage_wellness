@@ -1,0 +1,325 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+
+}
+
+
+
+header h1 {
+  font-size: 24px;
+  animation: bounceIn 1s ease-out;
+}
+
+main {
+  margin: 10vh auto;
+  width: 90%;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 30px;
+  max-width: 90vw;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  max-width: 50vw;
+  margin: 20 vw auto;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Reasons Section */
+.reasons-section {
+  margin-bottom: 30px;
+}
+
+.reasons-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reason {
+  flex: 1 0 calc(99.33% - 10px);
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: slideInRight 1s ease-out;
+}
+
+.reason img {
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+
+/* Outlets Section */
+.outlets-section h2 {
+  margin: 5vh;
+  text-align: center;
+  color: #333;
+  font-size: 8vh;
+  text-decoration: underline  rgb(247, 145, 0);
+  text-underline-offset: 3vh;
+}
+
+.outlets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.outlet {
+  flex: 1 0 calc(93% - 20px);
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.outlet img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.outlet img:hover {
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+@media (max-width:786px) {
+  .bhaap{
+    height: 50px;
+  }
+  .hide{
+display: none;
+  }
+
+}
+/* Media Query for Desktop */
+@media screen and (min-width: 768px) {
+
+  .form-section,
+  .reasons-section {
+    display: inline-block;
+    vertical-align: top;
+    width: 45vw;
+
+  }
+
+  .form-section {
+    margin-left: 4vw;
+    width: 35vw;
+
+  }
+
+  .outlet {
+    flex: 1 0 calc(33% - 20px);
+
+  }
+
+  .reason {
+    flex: 1 0 calc(30.33% - 10px);
+    margin: 0.5vw;
+
+  }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+/* parallex effect */
+.example {
+  background-image: url("./franchize.webp");
+  height: 50vh;
+  /* Create a parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 10%;
+  font-size: 8vh;
+}
+
+/* Style for modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80vw;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#franchise {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 2vh;
+  padding-bottom: 10vh;
+}
+#franchise h1 {
+  margin: 5vh;
+  text-align: center;
+  
+}
+@media (max-width:786px) {
+  #franchise h1 {
+    margin: 5vh;
+    text-align: left;
+    
+  }
+  
+}
+.steps {
+  list-style-type: none;
+  font-size: large;
+}
+
+.steps li {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}

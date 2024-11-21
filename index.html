@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relaxing Massage & Wellness</title>
+  <link rel="icon" href="./Tag.png" type="image/icon type">
+  <link rel="stylesheet" href="./menu-section.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css"
+    crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="testimonials.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;1,600&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="side.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+    integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Script for Swiper's JS -->
+  <script>
+    window.onscroll = function () { Scroll() };
+    function Scroll() {
+      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        document.getElementById("id-navi").className = "navi-slidedown";
+      }
+      if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+        document.getElementById("id-about-scroll").className = "scroll-about";
+      }
+    }
+
+    function menuButtonSnacks() {
+      document.getElementById("id-drinks").className = "menu-button-off";
+      document.getElementById("id-snacks").className = "menu-button-on";
+      document.getElementById("id-menu-snacks").className = "menu-snacks-on";
+      document.getElementById("id-menu-drinks").className = "menu-drinks-off";
+    }
+    function menuButtonService() {
+      location.href = "./service.html";
+    }
+    function menuButtonAbout() {
+      location.href = "./about.html";
+    }
+    window.addEventListener('load', () => {
+      const loaderWrapper = document.querySelector('.loader-wrapper');
+      setTimeout(() => {
+        loaderWrapper.classList.add('slide-left');
+      }, 1500); // Hide after 3 seconds
+    });
+
+
+  </script>
+
+</head>
+
+  <section class="main">
+    <!-- <div class="topheading">
+      <span style="width: 50%;" class="hide">
+        <i class="fa-solid fa-location-dot"></i> Savana Bazaar,Unit 4120, Calgary
+      </span><span class="phone"><a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="tel:1234567"> <i class="fa fa-mobile"></i>
+          1234567890</a>
+      </span>
+    </div> -->
+    <header class="header1">
+
+      <a  href="#"><img src="./Rl.png" width="350px" height="80px" style="margin-left: 200px;margin-top: 10px;"></a>
+
+      <nav class="navbar ">
+        <div class="fix ">
+          <a class="a1" href="index.html">Home</a>
+          <a class="a1" href="./about.html">About Us</a>
+          <a class="a1" href="./service.html">Service</a>
+          
+          <!-- <a class="a1" href="./menu.html">Team</a> -->
+          <a class="a1" href="">Booking</a>
+          <a class="a1" href="">Contact Us</a>
+        </div>
+      </nav>
+      <nav class="mobile-nav">
+
+        <button id="menuBtn" onclick="toggleMenu()">&#9776; MENU</button>
+        <div class="menu-items">  <a  href="#"><img src="./Rl.png" width="350px" height="80px" style="margin-left: 200px;margin-top: 10px;"></a>
+
+          <a class="a1" href="index.html">Home</a>
+          <a class="a1" href="./about.html">About Us</a>
+          <a class="a1" href="./menu.html">Service</a>
+          <!-- <a class="a1" href="./menu.html">Team</a> -->
+          <a class="a1" href="">Booking</a>
+          <a class="a1" href="">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+  </section>
+  <script>
+
+    function toggleMenu() {
+
+      var menuItems = document.querySelector('.menu-items');
+      if (menuItems.style.display === 'block') {
+        menuItems.style.display = 'none';
+      } else {
+        menuItems.style.display = 'block';
+      }
+    }
+
+  </script>
+  <header class="header">
+    <!-- <div class="loader-wrapper">
+      <img src="chaiBar head.png" alt="Avatar" width="40%">
+
+      <img src="./prelocader.gif" alt="Avatar" width="40%">
+
+      <div class="loader-title"> Tea is the second most consumed beverage on the planet - after Water.</div>
+
+    </div> -->
+
+
+
+    <div class="video-container">
+      <video autoplay muted loop playsinline id="myVideo">
+
+      <source src="wellness.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay">
+
+      </div>
+       <div class="overlay-heading">
+        <side>Relaxing</side>
+      <div>
+          Massage & Wellness
+
+       </div>
+       <div class="container_service">
+        <button type="button" id="id-drinks" class="menu-button-calender-phone" onclick="">780-483-1516</button>
+     
+
+      </div>
+
+      </div>
+    <!--  <div class="overlay-text">
+
+        <h1 class="txt">
+
+        </h1>
+      </div>
+    </div>
+
+    <div class="fix-background" id="id-navi"></div>
+
+    <div class="banner">
+      <h3 class="banner-subtitle " id="text">ਚਾਹ 'ਤੇ ਚਰਚਾ</h3>
+
+    </div>-->
+   
+
+    <div class="banner-bottom"><a href="#id-skills"><img src="svg/down-arrow.svg"></a></div>
+
+  </header>
+
+
+  <div class="content-divider"></div>
+
+  <section style="background-color:#ffffff;">
+
+
+    <div class="container_about">
+      <div class="box">
+        <img src="./Tag.png" ><br>
+        <h3 class="skill-title">Welcome to Relaxing Massage & Wellness</h3>
+        <p class="skill-text">
+          At Relaxing Massage and Wellness, we are dedicated to delivering the highest quality of massage therapy services, helping our clients find peace, serenity, and balance in their lives. Our commitment to excellence is reflected in the wide range of specialized treatments we offer, all carefully tailored to meet your unique needs.        </p>
+
+      </div>
+    
+    </div>
+
+  </section>
+
+
+
+
+  <!-- about-section -->
+  
+  <!--Menu-->
+  <div style=" z-index: -1;">
+
+    <section class="menu-template" id="id-menu">
+      <div class="container_service">
+        <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonAbout()"><img src="./Tag.png" width="140px" height="100px"><br><br>
+          <h3 class="skill-title">More About Us</h3>Relaxing Massage & Wellness offers a variety of popular massage therapies and acupuncture services tailored to your unique needs. Click here to discover more about what we do.</button>
+     
+        <button type="button" id="id-drinks" class="menu-button-calender-service" onclick=""><h4><i class="fa fa-calendar" style="font-size:60px;color:rgb(58, 6, 90)"></i><br><br><br><br><h3 class="skill-title">Book Online</h3>Conveniently & securely pick a date, massage type, RMT, and length of your massage online.  Also for Acupuncture services by Dr. Hyacinth Urrutia, Ac.</h4></button>
+      
+       
+      </div>
+      <div class="container_service">
+        <button type="button" id="id-drinks" class="menu-button-calender-book" onclick=""><h4>Dwonload Intake Form For Massage</h4></button>
+        <button type="button" id="id-drinks" class="menu-button-calender-book" onclick=""><h4>Dwonload Intake Form For Acupuncture</h4></button> 
+       
+      </div>
+     
+    
+    </section>
+  </div>
+
+    <section class="menu-header-container">
+     
+     
+      <h3 class="service-title" >Our Services</h3><img width="220px" height="100px" src="./Tag.png" style="margin-left: -190px;margin-top: 10px;">
+      
+    </section>
+
+    <!-- drinks menu -->
+
+    <div class="container_service">
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Deep Tissue</h4></button>
+   
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Relaxation</h4></button>
+    
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Hot Stone</h4></button>
+    </div>
+    <div class="container_service">
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Sports</h4></button>
+   
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Orthopedic</h4></button>
+    
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Prenatal</h4></button>
+    </div>
+    <div class="container_service">
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Cupping</h4></button>
+   
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Craniosacral</h4></button>
+    
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Aromatherapy</h4></button>
+    </div >
+    <div class="container_service">
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Reflexology</h4></button>
+   
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Body Scrub</h4></button>
+    
+      <button type="button" id="id-drinks" class="menu-button-calender-service" onclick="menuButtonService();"><h4>Acupuncture</h4></button>
+   
+</div>
+
+<section class="menu-header-container">
+     
+     
+  <h3 class="service-title" >Direct Billing</h3><img width="220px" height="100px" src="./Tag.png" style="margin-left: -190px;margin-top: 10px;">
+  
+</section>
+<div class="container_Billing">
+  <div class="box2">
+  
+   <p>
+    Please check your employee benefit plan for your coverage for services and treatments like massage and acupuncture that have been provided by your employer to maintain good health and wellness. Here at Relaxing, we are set up to provide direct billing with most insurance companies to make the claiming process easy and simple for you. Please see our list of common participating insurers below. For any additional questions or clarifications please call us at 780-483-1516 or email us at Relaxing@gmail.com </p>
+
+  </div></div>
+  <div class="container_Billing">
+    <div class="box">
+    
+     <h4>
+      Please Note:  We provide you with 40% off when booking with a student massage therapist, because these massages cannot be claimed through your insurance. </h>
+  
+    </div></div>
+    <!-- snacks menu ending -->
+
+    <script>
+      // Select all menu cards
+      const menuCards = document.querySelectorAll('.menu-flip-card');
+
+      let currentIndex1 = 0;
+
+      // Function to apply hover effect to the next menu card
+      function applyHoverEffect() {
+        console.log(currentIndex1);
+        // Remove hover effect from the previous card
+        if (currentIndex1 > 0) {
+          menuCards[currentIndex1 - 1].classList.remove('hover-effect');
+        }
+        // Add hover effect to the current card
+        menuCards[currentIndex1].classList.add('hover-effect');
+
+        // Increment currentIndex
+        currentIndex1 = (currentIndex1 + 1) % menuCards.length;
+
+        // Check if all menu cards have been animated
+        if (currentIndex1 === 0) {
+          // Restart the loop by resetting currentIndex1 to 0
+          clearInterval(intervalId);
+          setTimeout(() => {
+            currentIndex1 = 0;
+            intervalId = setInterval(applyHoverEffect, 5000);
+          }, 1000); // Wait for 5 seconds before restarting
+        }
+      }
+
+      // Apply hover effect to the first menu card
+      applyHoverEffect();
+
+      // Set interval to apply hover effect to each menu card
+      let intervalId = setInterval(applyHoverEffect, 3000);
+    </script>
+
+
+   <!-- Insurance-->
+
+   <section class="insurance" id="id-menu">
+    <section class="menu-header-container">
+     
+     
+      <h3 class="service-title" style="color:white;">Participating Insurers</h3><img width="400px" height="100px" src="./Tag.png" style="margin-left: -350px;margin-top: 10px;">
+      
+    </section> 
+      <div class="container_service">
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/blue-cross.png"</button>
+     
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/canada-life.png"</button>
+      
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/chambers-of-commerce.png"</button>
+          
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/cowan.png"</button>
+      </div>
+      <div class="container_service">
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/desjardins.png"</button>
+     
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/first-canadian.png"</button>
+      
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/gsc.png"</button>
+
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/gwl.png"</button>
+      </div>
+      <div class="container_service">
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/ia-financial.png"</button>
+     
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/johnson.png"</button>
+      
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/johnston-group.png"</button>
+
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/manulife.png"</button>
+      </div >
+      <div class="container_service">
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/maximum-benefit.png"</button>
+     
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/ssq.png"</button>
+      
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/standard-life.png"</button>
+
+        <button type="button" id="id-drinks" class="menu-button-calender-insurance" onclick=""><img width="180px" height="70px" src="./Insurance/sun-life.png"</button>
+      </div >
+     
+        
+    </section>
+</div>
+
+<!--End  Insurance-->
+    <!-- testomonials  -->
+
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container_testimonials" data-aos="fade-up">
+
+        <section class="menu-header-container">
+     
+     
+          <h3 class="service-title" style="margin-top: 20px;" >Testimonials</h3><img width="220px" height="100px" src="./Tag.png" style="margin-left: -190px;margin-top: 30px;">
+          
+        </section>
+    
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  "Relaxing Massage & Wellness truly lives up to its name! From the moment I walked in, I felt a sense of calm and relaxation. The atmosphere is serene, with soothing music and a welcoming aroma. My therapist was incredibly skilled, tailoring the massage to focus on areas where I had the most tension. By the end of the session, I felt like a new person!"
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="./testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  "I can't say enough good things about Relaxing Massage & Wellness. From the moment I arrived, the staff made me feel so comfortable and cared for. The massage was exactly what I needed—it felt like they knew every muscle that needed attention! The ambiance was perfect—calm lighting, relaxing music, and a warm, inviting vibe. I left feeling refreshed, rejuvenated, and stress-free. I also love the range of services they offer, making it easy to customize each visit to my needs."
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="./testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  "The environment is so peaceful and inviting—it’s like stepping into a sanctuary. I also appreciated how personalized the experience was; they truly listened to my needs and tailored the massage to target my problem areas."
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="./testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  "I recently visited Relaxing Massage & Wellness and it was hands down one of the best experiences I’ve had. From the moment I walked in, the ambiance was calming, with soothing music and a beautiful, serene setting that made me feel at ease right away. The massage itself was amazing! The therapist was very professional and attentive, making sure I was comfortable and tailoring the session to focus on my areas of tension. I left feeling relaxed, refreshed, and more centered than I have in months."
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="./testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  "I had the pleasure of visiting Relaxing Massage & Wellness, and I can honestly say it exceeded all my expectations. From the moment I walked in, I felt welcomed and at peace. The staff was incredibly kind and professional, making sure I felt comfortable every step of the way. I left feeling completely rejuvenated and will definitely be returning for more treatments in the future! Highly recommend to anyone in need of some relaxation and self-care!"
+
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="./testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+
+              </div>
+            </div><!-- End testimonial item -->
+            <br>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      // Initialize Swiper for the testimonials section
+      var swiperTestimonials = new Swiper('.testimonials-slider', {
+        // Parameters
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 786px
+          786: {
+            slidesPerView: 2
+          }
+        },
+        // Enable AOS animations
+        on: {
+          init: function () {
+            AOS.init({
+              duration: 1000,
+              once: true,
+            });
+          },
+        },
+      });
+
+      // Reinitialize AOS on Swiper slide change
+      swiperTestimonials.on('slideChange', function () {
+        AOS.refresh();
+      });
+
+    </script>
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="row" style="text-align: center;">
+      <div class="container"> <img src="./Rl.png" alt="" width="200px" height="100px" >
+        <div>   <a  href="index.html">Home</a> /
+          <a  href="./about.html">About Us</a> /
+          <a  href="./service.html">Service</a> /
+          <!-- <a  href="./Team.html">Team</a> / -->
+          <a  href="">Booking</a> /
+          <a  href="">Contact Us</a> </div>
+          <br>103 Charlesworth Dr SW, Edmonton, AB T6X 1A5, Canada</div></div>
+      
+       <hr>
+      <div class="container">
+        <div class="row" style="text-align: center;">
+          <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+            Relaxing Massage & Wellness <br>
+           
+          </p>
+  
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"
+      integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

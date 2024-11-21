@@ -1,0 +1,128 @@
+.contact-iframe {
+  border-radius: 1rem;
+  width: 100%;
+  height: 50vh;
+}
+
+p a {
+  color: black;
+  text-decoration: none;
+}
+
+.reasons-section img {
+  display: block;
+  margin-bottom: 5vh;
+}
+
+.reasons-section p,
+.reasons-section a {
+  font-size: 1.5rem;
+}
+
+
+
+.contact-info a i {
+  margin-right: 8px;
+}
+
+.location i {
+  color: #e53e3e;
+}
+
+.hours p {
+  margin: 4px 0;
+}
+
+
+.reasons-section
+ {
+
+  width: 80vw;
+
+  margin: auto;
+  margin-bottom: 10vh;
+
+}
+.reasons-section{
+  display: block;
+  justify-content: space-between;
+}
+.form-section {
+  box-shadow: 0 4px 8px rgba(7, 0, 0, 0.1);
+
+}
+
+.address {
+  display: inline-block;
+  box-shadow: 0px 2px 9px 0px rgba(247, 141, 32, 0.50);
+  border: 2px solid;
+  border-color:rgb(247, 145, 0) ;
+  border-radius: 20px;
+  padding: 2vw;
+  width: 40%;
+  margin: 2vw;
+text-align: left;
+}
+
+
+.firstSection{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.introSection,.form-section{
+  width: 40%;
+}
+.introSection p{
+  margin-top: 5vh;
+  line-height: 1.5 rem;
+  font-size: larger;
+}
+@media (max-width: 768px) {
+  .reasons-section {
+    margin: 10vh auto;
+  }
+
+  .reasons-section img {
+    width: 100%;
+  }
+
+  .reasons-section a {
+    font-size: 2vh;
+  }
+
+  .address {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+
+    width: 80vw;
+  }
+
+  .form-section {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+  }
+form{
+  padding:0;
+  margin: 0;
+  max-width: 100%;
+}
+.firstSection{
+  display: block;
+}
+.introSection img{
+  width: inherit;
+}
+.introSection,.form-section{
+  width: 100%;
+}
+  #franchiseForm {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,128 @@
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+  
+}
+#testimonials{
+    width: 80vw;
+    margin: 0 auto ;
+}
+#testimonials h1 { 
+text-align: center;
+  font-family: 'Sora', sans-serif;
+  text-decoration: underline;
+  -webkit-text-decoration: underline; /* For Safari */
+  text-decoration-color: rgb(247, 145, 0); /* Set the color separately */
+  -webkit-text-decoration-color: rgb(247, 145, 0); /* For Safari */
+  width: 70vw;
+  font-size: 10vh;
+  margin-bottom: 10vh;
+  text-underline-offset: 4vh;   
+  margin: 10vh auto;
+
+}
+
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+  
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: white;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 0 45px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #d3af71;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  color: #26231d;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+
+  position: relative;
+  z-index: 1;
+  background: #26231d;
+  background-color: white;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #cda45e;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  #testimonials h1{
+    display: inline;
+    font-family: Sora;
+  text-decoration: underline  rgb(247, 145, 0);
+    width: 40vw;
+    font-size: 8vw;
+    text-underline-offset: 4vh;
+    margin: 10vh auto;
+
+  }
+  #testimonials p{
+    margin-top: 10vh ;
+
+  }
+  #testimonial .section-title{
+width: 80vw;
+  }
+  #testimonials h1 img{
+    height: 60px;
+    display: inline;
+
+  }
+}

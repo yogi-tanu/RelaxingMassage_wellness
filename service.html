@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relaxing Massage & Wellness</title>
+  <link rel="icon" href="./Tag.png" type="image/icon type">
+  <link rel="stylesheet" href="./menu-section.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css"
+    crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="testimonials.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;1,600&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="side.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+    integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Script for Swiper's JS -->
+  <script>
+    window.onscroll = function () { Scroll() };
+    function Scroll() {
+      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        document.getElementById("id-navi").className = "navi-slidedown";
+      }
+      if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+        document.getElementById("id-about-scroll").className = "scroll-about";
+      }
+    }
+
+    function menuButtonSnacks() {
+      document.getElementById("id-drinks").className = "menu-button-off";
+      document.getElementById("id-snacks").className = "menu-button-on";
+      document.getElementById("id-menu-snacks").className = "menu-snacks-on";
+      document.getElementById("id-menu-drinks").className = "menu-drinks-off";
+    }
+    function menuButtonDrinks() {
+      document.getElementById("id-drinks").className = "menu-button-on";
+      document.getElementById("id-snacks").className = "menu-button-off";
+      document.getElementById("id-menu-snacks").className = "menu-snacks-off";
+      document.getElementById("id-menu-drinks").className = "menu-drinks-on";
+    }
+    window.addEventListener('load', () => {
+      const loaderWrapper = document.querySelector('.loader-wrapper');
+      setTimeout(() => {
+        loaderWrapper.classList.add('slide-left');
+      }, 1500); // Hide after 3 seconds
+    });
+
+
+   
+      function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.content-section');
+        sections.forEach(section => {
+          section.style.display = 'none';
+        });
+    
+        // Show the selected section
+        const selectedSection = document.getElementById(sectionId);
+        selectedSection.style.display = 'block';
+      }
+  
+    
+
+  </script>
+
+</head>
+
+  <section class="main">
+    <!-- <div class="topheading">
+      <span style="width: 50%;" class="hide">
+        <i class="fa-solid fa-location-dot"></i> Savana Bazaar,Unit 4120, Calgary
+      </span><span class="phone"><a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="tel:1234567"> <i class="fa fa-mobile"></i>
+          1234567890</a>
+      </span>
+    </div> -->
+    <header class="header1">
+
+      <a  href="#"><img src="./Rl.png" width="350px" height="80px" style="margin-left: 200px;margin-top: 10px;"></a>
+
+
+      <nav class="navbar ">
+        <div class="fix ">
+          <a class="a1" href="index.html">Home</a>
+          <a class="a1" href="./about.html">About Us</a>
+          <a class="a1" href="./service.html">Service</a>
+          <!-- <a class="a1" href="./menu.html">Team</a> -->
+          <a class="a1" href="">Booking</a>
+          <a class="a1" href="">Contact Us</a>
+        </div>
+      </nav>
+      <nav class="mobile-nav">
+
+        <button id="menuBtn" onclick="toggleMenu()">&#9776; MENU</button>
+        <div class="menu-items">  <a  href="#"><img src="./Rl.png" width="350px" height="80px" style="margin-left: 200px;margin-top: 10px;"></a>
+
+          <a class="a1" href="index.html">Home</a>
+          <a class="a1" href="./about.html">About Us</a>
+          <a class="a1" href="./service.html">Service</a>
+          <!-- <a class="a1" href="./menu.html">Team</a> -->
+          <a class="a1" href="">Booking</a>
+          <a class="a1" href="">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+  </section>
+  <script>
+
+    function toggleMenu() {
+
+      var menuItems = document.querySelector('.menu-items');
+      if (menuItems.style.display === 'block') {
+        menuItems.style.display = 'none';
+      } else {
+        menuItems.style.display = 'block';
+      }
+    }
+    function toggleDetails(detailsId) {
+      const details = document.getElementById(detailsId);
+      if (details.style.display === "block") {
+        details.style.display = "none";
+      } else {
+        details.style.display = "block";
+      }
+    }
+    
+    function bookAppointment(service) {
+      alert(`Redirecting to booking page for ${service}...`);
+      // Add your booking redirection logic here
+    }
+  </script>
+ 
+
+  </header>
+
+
+  <div class="content-divider"></div>
+
+  
+    <section style="background-color:#ffffff;">
+
+
+    <div class="container_about">
+      <div class="box">
+        <img src="./Tag.png" ><br>
+        <h3 class="skill-main">Welcome to Relaxing Massage & Wellness</h3>
+        <p class="skill-text">
+          At Relaxing Massage and Wellness, we specialize in a range of massage therapies and acupuncture designed to rejuvenate your body and mind. Our skilled therapists focus on relieving tension, improving circulation, and enhancing flexibility, leading to a deeper sense of relaxation and overall well-being. Experience the transformative benefits of our massage services, from reducing stress and easing chronic pain to promoting better sleep and boosting your energy levels. </p>
+
+      </div>
+    
+    </div>
+
+  </section>
+        
+          <section id="id-menu">
+            <div class="container_service">
+              <!-- Buttons to toggle sections -->
+              <button type="button" class="menu-button-calender-service2" onclick="showSection('massage-section')">
+                <h4>Massage Therapy Services</h4>
+              </button>
+              <button type="button" class="menu-button-calender-service2" onclick="showSection('acupuncture-section')">
+                <h4>Acupuncture</h4>
+              </button>
+              <button type="button" class="menu-button-calender-service2" onclick="showSection('promotions-section')">
+                <h4>Current Promotions / Gift Certificates</h4>
+              </button>
+            </div>
+          </section>
+      
+          <!-- Sections to toggle -->
+          <div class="content-sections">
+            <!-- Massage Section -->
+            <div id="massage-section" class="content-section" style="display: none;">
+              <h2 class="service-main">Massage Therapy Services</h2>
+              <div class="row">
+                <!-- Column 1 -->
+               
+          
+               
+                <div class="col">
+                  <img src="./Massage/1.png" alt="Deep Tissue Massage" class="circle-image">
+                  <h3>Deep Tissue Massage</h3>
+                  <p>Deep tissue massage is designed to get deep into the layers of muscle and provide relief by improving circulation, breaking down muscle scar tissue and encouraging the body to begin its natural healing process. Tension carried from an injury or from muscles that have tightened over time, can be relieved through a deep tissue massage.</p>
+                  <button class="toggle-btn" onclick="toggleDetails('massage-details-1')">View Rates</button>
+                  <div id="massage-details-1" class="expanded-content">
+                    <table class="rate-table">
+                      <tr><td>30 Minutes<br>$67</td><td>45 Minutes<br>$82</td></tr>
+                      <tr><td>60 Minutes<br>$100</td><td>75 Minutes<br>$120</td></tr>
+                      <tr><td>90 Minutes<br>$141</td><td>120 Minutes<br>$181</td></tr>
+                    </table>
+                    <button class="book-btn" onclick="bookAppointment('Deep Tissue Massage')">Book Now</button>
+                  </div>
+                  </div>
+                
+              
+
+           
+             <!-- Column 2 -->
+
+            <div class="col">
+              <img src="./Massage/2.png" alt="Relaxation Massage" class="circle-image">
+              <h3>Relaxation Massage</h3>
+              <p>A gentle but highly effective massage of the muscles to relieve tension and relax your body. A relaxation massage’s tender and soothing movement is a great way to alleviate and treat yourself after a long day. This massage reduces physical and emotional stress while stimulating a night of quality sleep.</p>
+              <button class="toggle-btn" onclick="toggleDetails('massage-details-2')">View Rates</button>
+              <div id="massage-details-2" class="expanded-content">
+                <table class="rate-table">
+                  <tr><td>30 Minutes<br>$67</td><td>45 Minutes<br>$82</td></tr>
+                  <tr><td>60 Minutes<br>$100</td><td>75 Minutes<br>$120</td></tr>
+                  <tr><td>90 Minutes<br>$141</td><td>120 Minutes<br>$181</td></tr>
+                </table>
+                <button class="book-btn" onclick="bookAppointment('Relaxation Massage')">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+            <div class="row">
+            <!-- Column 3 -->
+
+           <div class="col">
+            <img src="./Massage/3.png" alt="Hot Stone Massage" class="circle-image">
+            <h3>Hot Stone Massage</h3>
+            <p>Using heated lava rocks placed on your body, your massage therapist will work with the soothing heat to warm up any tightness in your body. This allows your therapist to perform a more valuable rejuvenating massage. Hot stones may be used as a tool to massage in critical areas, making it an excellent way of relieving pain and inflammation.</p>
+            <button class="toggle-btn" onclick="toggleDetails('massage-details-3')">View Rates</button>
+            <div id="massage-details-3" class="expanded-content">
+              <table class="rate-table">
+                
+                <tr><td>60 Minutes<br>$120</td><td>75 Minutes<br>$145</td></tr>
+                <tr><td>90 Minutes<br>$165</td><td>120 Minutes<br>$221</td></tr>
+              </table>
+              <button class="book-btn" onclick="bookAppointment('Hot Stone Massage')">Book Now</button>
+            </div>
+          </div> 
+
+<!-- Column 4 -->
+
+<div class="col">
+  <img src="./Massage/4.png" alt="Cupping Therapy Massage" class="circle-image">
+  <h3>Cupping Therapy Massage</h3>
+  <p>This technique of ancient traditional Chinese medicine is known for its benefits that include a release from pain and inflammation as well as more effortless blood flow. The suction created as the cups rest on your skin, combining with massage therapy, is used to drain excess fluids while working to untangle any muscle knots and swelling.</p>
+  <button class="toggle-btn" onclick="toggleDetails('massage-details-4')">View Rates</button>
+  <div id="massage-details-4" class="expanded-content">
+    <table class="rate-table">
+                
+      <tr><td>60 Minutes<br>$121</td><td>75 Minutes<br>$145</td></tr>
+      <tr><td>90 Minutes<br>$165</td><td>120 Minutes<br>$222</td></tr>
+    </table>
+    <button class="book-btn" onclick="bookAppointment('Cupping Therapy Massage')">Book Now</button>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<!-- Column 5 -->
+
+<div class="col">
+  <img src="./Massage/5.png" alt="Aromatherapy Massage" class="circle-image">
+  <h3>Aromatherapy Massage</h3>
+  <p>Aromatherapy massage uses your sense of smell to elevate your experience in relaxation. The use of fragrant oils to massage allows you the opportunity to inhale the scent of the essential oils and enhance your mind and body. This form of massage will leave you feeling rejuvenated and energized along with a noticeable decrease in stress levels.</p>
+  <button class="toggle-btn" onclick="toggleDetails('massage-details-5')">View Rates</button>
+  <div id="massage-details-5" class="expanded-content">
+    <table class="rate-table">
+      <tr><td>30 Minutes<br>$67</td><td>45 Minutes<br>$82</td></tr>
+      <tr><td>60 Minutes<br>$100</td><td>75 Minutes<br>$120</td></tr>
+      <tr><td>90 Minutes<br>$141</td><td>120 Minutes<br>$181</td></tr>
+    </table>
+    <button class="book-btn" onclick="bookAppointment('Aromatherapy Massage')">Book Now</button>
+  </div>
+</div>
+
+<!-- Column 6 -->
+
+<div class="col">
+  <img src="./Massage/6.png" alt="Sports Massage" class="circle-image">
+  <h3>Sports Massage</h3>
+  <p>Sports Massage focuses on treating patients involved in athletic activity. While similar to a deep tissue massage, a sports massage concentrates more on the rehabilitation of an injured or inflamed area and can also be used to simply relax the muscles while training. By preventing stiffness and restoring the muscles, this form of massage is noticeably effective.</p>
+  <button class="toggle-btn" onclick="toggleDetails('massage-details-6')">View Rates</button>
+  <div id="massage-details-6" class="expanded-content">
+    <table class="rate-table">
+      <tr><td>30 Minutes<br>$67</td><td>45 Minutes<br>$82</td></tr>
+      <tr><td>60 Minutes<br>$100</td><td>75 Minutes<br>$120</td></tr>
+      <tr><td>90 Minutes<br>$141</td><td>120 Minutes<br>$181</td></tr>
+    </table>
+    <button class="book-btn" onclick="bookAppointment('SSports Massage')">Book Now</button>
+  </div>
+</div>
+</div>
+<!-- Column 7 -->
+<div class="row">
+<div class="col">
+  <img src="./Massage/7.png" alt="Orthopedic Massage" class="circle-image">
+  <h3>Orthopedic Massage</h3>
+  <p>Orthopedic Massage is trained to treat and rehabilitate painful conditions that affect the soft tissue surrounding the joints. Benefits of an orthopedic massage typically include a decrease of pain, an increase in range of motion and most importantly, strengthening the body to return to performing everyday routines.</p>
+  <button class="toggle-btn" onclick="toggleDetails('massage-details-7')">View Rates</button>
+  <div id="massage-details-7" class="expanded-content">
+    <table class="rate-table">
+      <tr><td>30 Minutes<br>$67</td><td>45 Minutes<br>$82</td></tr>
+      <tr><td>60 Minutes<br>$100</td><td>75 Minutes<br>$120</td></tr>
+      <tr><td>90 Minutes<br>$141</td><td>120 Minutes<br>$189</td></tr>
+    </table>
+    <button class="book-btn" onclick="bookAppointment('Orthopedic Massage')">Book Now</button>
+  </div>
+</div>
+
+
+<!-- Column 8 -->
+
+<div class="col">
+  <img src="./Massage/8.png" alt="Prenatal Massage" class="circle-image">
+  <h3>Prenatal Massage</h3>
+  <p>A prenatal massage may be exactly what you are looking for to alleviate the discomforts and pain carried through pregnancy such as back pain, stress, muscle tension, headaches, and much more. Our massage therapists will be sure to address any concerns or preferences you may have to ensure your treatment produces maximum comfort.</p>
+  <button class="toggle-btn" onclick="toggleDetails('massage-details-8')">View Rates</button>
+  <div id="massage-details-8" class="expanded-content">
+    <table class="rate-table">
+                
+      <tr><td>60 Minutes<br>$100</td><td>75 Minutes<br>$120</td></tr>
+      <tr><td>90 Minutes<br>$141</td><td>120 Minutes<br>$181</td></tr>
+    </table>
+    <button class="book-btn" onclick="bookAppointment('Prenatal Massage')">Book Now</button>
+  </div>
+</div>
+</div>
+
+<div class="row">
+ <!-- Column 9 --> 
+  <div class="col">
+    <img src="./Massage/9.png" alt="Craniosacral Massage" class="circle-image">
+    <h3>Craniosacral Massage</h3>
+    <p>Orthopedic Massage is trained to treat and rehCraniosacral massage specializes in evaluating and focusing on releasing strain and any restrictions in the craniosacral system. This system consists of the membranes and fluid surrounding the brain and spinal cord, and by massaging the shoulders, neck and scalp, you will likely be relieved of headaches, fatigue and tension.</p>
+    <button class="toggle-btn" onclick="toggleDetails('massage-details-9')">View Rates</button>
+    <div id="massage-details-9" class="expanded-content">
+      <table class="rate-table">
+        <tr><td>30 Minutes<br>$67</td><td>45 Minutes<br>$82</td></tr>
+        <tr><td>60 Minutes<br>$100</td><td>75 Minutes<br>$120</td></tr>
+        <tr><td>90 Minutes<br>$141</td><td>120 Minutes<br>$181</td></tr>
+      </table>
+      <button class="book-btn" onclick="bookAppointment('Craniosacral Massage')">Book Now</button>
+    </div>
+  </div>
+  
+  
+  <!-- Column 10 -->
+  
+  <div class="col">
+    <img src="./Massage/10.png" alt="Reflexology Massage" class="circle-image">
+    <h3>Reflexology Massage</h3>
+    <p>A reflexology massage is a method of massaging the feet based on the ancient belief of its positive and healing effect on the body. The applied pressure on critical areas connects to significant body organs, thus creating an equilibrium and stimulation of endorphins. This stimulation replenishes the body and restores its natural balance.</p>
+    <button class="toggle-btn" onclick="toggleDetails('massage-details-10')">View Rates</button>
+    <div id="massage-details-10" class="expanded-content">
+      <table class="rate-table">
+                  
+        <tr><td>60 Minutes<br>$100</td><td>75 Minutes<br>$120</td></tr>
+        <tr><td>90 Minutes<br>$141</td><td>120 Minutes<br>$181</td></tr>
+      </table>
+      <button class="book-btn" onclick="bookAppointment('Reflexology Massage')">Book Now</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Column 9 --> 
+     <div class="col">
+       <img src="./Massage/11.png" alt="Thai Herbal Hot Compress Massage" class="circle-image">
+       <h3>Thai Herbal Hot Compress Massage</h3>
+       <p>Thai herbal therapy is a great way to increase energy flow into your body as your therapist uses a herbal compress ball instilled with many refreshing herbs. Each herbal compress ball is compressed, soaked, and steamed before being rolled, patted, or pounded onto the skin. Its many healing properties include cleansing and healing the skin.</p>
+       <button class="toggle-btn" onclick="toggleDetails('massage-details-11')">View Rates</button>
+       <div id="massage-details-11" class="expanded-content">
+        <table class="rate-table">
+                  
+          <tr><td>60 Minutes<br>$126</td><td>75 Minutes<br>$145</td></tr>
+          <tr><td>90 Minutes<br>$166</td><td>120 Minutes<br>$228</td></tr>
+        </table>
+         <button class="book-btn" onclick="bookAppointment('Thai Herbal Hot Compress Massage')">Book Now</button>
+       </div>
+     </div>
+     
+     
+     <!-- Column 10 -->
+     
+     <div class="col">
+       <img src="./Massage/12.png" alt="Body Scrub Massage Treatment" class="circle-image">
+       <h3>Body Scrub Massage Treatment</h3>
+       <p>A body scrub massage treatment is an essential skin care treatment to maintain soft, smooth and healthy skin. It removes dead skin cells and increases blood circulation in your body through exfoliation. Body scrub with a mud wrap is also available, and clients are encouraged to use the private shower where they can rinse off.</p>
+       <button class="toggle-btn" onclick="toggleDetails('massage-details-12')">View Rates</button>
+       <div id="massage-details-12" class="expanded-content">
+         <table class="rate-table">
+                     
+          
+           <tr><td>90 Minutes<br>$177</td><td>Body Scrub With Mud Wrap (120 Minutes)<br>$207</td></tr>
+         </table>
+         <button class="book-btn" onclick="bookAppointment('Body Scrub Massage Treatment')">Book Now</button>
+       </div>
+     </div>
+
+  </div>
+</div>
+</div>
+  <!-- Sections to toggle -->
+  <div class="content-sections">
+    <!-- Massage Section -->
+    <div id="acupuncture-section" class="content-section" style="display: none;">
+      <h2 class="service-acupuncture">Acupuncture</h2>
+ <div>      <h4>What Is Acupuncture?</h4>
+  <p class="skill-text">Acupuncture is an ancient form of holistic therapy that has been used to help people get well and stay well for thousands of years. It is a safe and effective way to stimulate the body’s natural healing response.
+
+Practitioners of acupuncture and Chinese medicine use thin, sterile and disposable needles and place them at specific points on the body to relieve pain, reduce inflammation, and treat a wide variety of conditions. It helps to improve overall function and sense of well-being.</p></div>
+<div>      <h4>Our Acupuncturist</h4>
+  <p class="skill-text">
+    Dr. Hyacinth Urrutia, Ac. is a Doctor of Acupuncture in the Province of Alberta. She graduated from the Grant MacEwan University Acupuncture and Traditional Chinese Medicine (TCM) program. She also completed an Internship at the Third Affiliated Hospital, Henan University of Chinese Medicine in Zhengzhou, China.</p></div>
+    <div>      <h4>ODr. Urrutia treats the following conditions:</h4>
+      <p class="skill-text">
+        <table width="100%">
+          <tr><td>-> Eye Health</td><td>-> Numbness/Tingling of the </td><td>-> Foot Pain, Plantar Fasciitis </td><td>-> Digestive Issues </td></tr>
+          <tr><td>-> Headaches and Migraines</td><td>-> Back Pain </td><td>-> Anxiety, Stress, Depression</td><td>-> Sleep Disturbance</td></tr>
+          <tr><td>-> Jaw Pain</td><td>-> Sciatica</td><td>-> Respiratory Conditions</td><td>-> Cosmetic Facial Rejuvenation</td></tr>
+          <tr><td>-> Neck and Shoulder Pain</td><td>-> Knee Pain</td><td>-> Low Energy</td><td>-> Cosmetic Facial Rejuvenation</td></tr>
+        </table></p></div>
+      <div class="row">
+        <!-- Column 1 -->
+       
+  
+       
+        <div class="col">
+          <img src="./Acupuncture/1.png" alt="Acupuncture Treatment" class="circle-image">
+          
+          <button class="toggle-btn" onclick="toggleDetails('Acupuncture-details-1')">View Rates</button>
+          <div id="Acupuncture-details-1" class="expanded-content">
+            <table class="rate-table">
+              <tr><td>Initial In-Depth Intake And Treatment (60 Minutes)<br>$140</td><td>Follow-Up Treatment (60 Minutes)<br>$100</td></tr>
+              <tr><td>Fire Cupping (Follow-Up Treatment - 30 Minutes)<br>$60</td><td>Gua Sha (Follow-Up Treatment Add - On)<br>$120</td></tr>
+              
+            </table>
+            <div>* GST is not applied for Acupuncture</div>
+            <button class="book-btn" onclick="bookAppointment('Deep Tissue Massage')">Book Now</button>
+          </div>
+          </div> 
+  </div>
+
+    <div class="row">
+    <!-- Column 3 -->
+
+   <div class="col">
+    <img src="./Massage/3.png" alt="Acupuncture for Better Vision" class="circle-image">
+    <h3>Acupuncture for Better Vision</h3>
+    <p>Minimum 10 treatments (number of treatments needed to be determined at intake)</p>
+    <button class="toggle-btn" onclick="toggleDetails('Acupuncture-details-3')">View Rates</button>
+    <div id="Acupuncture-details-3" class="expanded-content">
+      <table class="rate-table">
+        
+        <tr><td><h3>(More information coming soon)</h3></td></tr>
+      
+      </table>
+      <button class="book-btn" onclick="bookAppointment('Hot Stone Massage')">Book Now</button>
+    </div>
+  </div> 
+
+<!-- Column 4 -->
+
+<div class="col">
+<img src="./Massage/4.png" alt="Facial Acupuncture" class="circle-image">
+<h3>Facial Acupuncture</h3>
+<p>Minimum 12 treatments (number of treatments needed to be determined at intake)</p>
+<button class="toggle-btn" onclick="toggleDetails('Acupuncture-details-4')">View Details</button>
+<div id="Acupuncture-details-4" class="expanded-content">
+<table class="rate-table">
+        
+  <tr><td>Facial Acupuncture  (90 Minutes)<br>$140</td></tr>
+</table>
+<div>* GST is not applied for Acupuncture</div>
+<button class="book-btn" onclick="bookAppointment('Cupping Therapy Massage')">Book Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+         
+          
+      
+            <div id="promotions-section" class="content-section" style="display: none;">
+              <h2 class="service-promotions">Current Promotions / Gift Certificates</h2>
+              <h4 class="service-promotions">Coming Soon</h4>
+            </div>
+          </div>
+        </div>
+     
+      
+    </div>
+
+   <!-- Site footer -->
+   <footer class="site-footer">
+    <div class="row" style="text-align: center;">
+    <div class="container"> <img src="./Rl.png" alt="" width="200px" height="100px" >
+      <div>   <a  href="index.html">Home</a> /
+        <a  href="./about.html">About Us</a> /
+        <a  href="./service.html">Service</a> /
+        <!-- <a  href="./Team.html">Team</a> / -->
+        <a  href="">Booking</a> /
+        <a  href="">Contact Us</a> </div>
+        <br>103 Charlesworth Dr SW, Edmonton, AB T6X 1A5, Canada</div></div>
+    
+     <hr>
+    <div class="container">
+      <div class="row" style="text-align: center;">
+        <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+          Relaxing Massage & Wellness <br>
+         
+        </p>
+
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"
+      integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

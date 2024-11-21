@@ -1,0 +1,818 @@
+/* Massage Sections */
+/* General container for sections */
+.content-sections {
+  margin: 20px auto;
+  max-width: 1200px;
+  margin-top: 20px; 
+}
+
+/* Row styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 40px;  
+  justify-content: center;
+}
+
+/* Column styling with background image */
+.col {
+  flex: 1 1 calc(50% - 40px);
+  max-width: calc(50% - 40px);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd; /* Grey border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: url('./Massage/13.png') no-repeat center center/cover; /* Background image */
+  color: #333; /* Dark text for readability */
+}
+
+/* Circular Image Styling */
+.circle-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #ccc; /* Grey border around the image */
+}
+
+/* Buttons */
+.toggle-btn, .book-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* View Details button - grey */
+.expanded-content {
+  display: none; /* Ensure the details are hidden by default */
+}
+
+.toggle-btn {
+  background-color: #ccc; /* Grey color for 'View Details' button */
+  color: #333;
+  font-weight: bold;
+}
+
+.toggle-btn:hover {
+  background-color: #bbb; /* Slightly darker grey on hover */
+}
+
+/* Book Now button */
+.book-btn {
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.book-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Stylish table */
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif; /* Modern font */
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  margin-top: 10px;
+  border: 1px solid #ddd; /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Header styling */
+.rate-table th {
+  background-color: #444; /* Dark header background */
+  color: #fff; /* White text for contrast */
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Slight letter spacing */
+}
+
+/* Cell styling */
+.rate-table td {
+  padding: 12px;
+  color: #333; /* Dark text for readability */
+  text-align: center;
+  border-bottom: 1px solid #ddd; /* Subtle divider */
+  font-style: italic; /* Stylish italic text */
+  font-size: 14px; /* Slightly smaller text */
+}
+
+/* Hover effect on rows */
+.rate-table tr:hover {
+  background-color: #f1f1f1; /* Light grey on hover */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* End Massage section */
+.menu-template {
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("./1.png") center/cover no-repeat;
+    position: relative;
+    background-attachment: fixed;
+  }
+  .insurance {
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("./1.png") center/cover no-repeat;
+    padding: 30px;
+    position: relative;
+
+    background-attachment: fixed;
+  } 
+  .menu-title {
+    font-family: SpartanLimport;
+    margin-top: 2.5rem;
+    line-height: 1rem;
+    text-align: left;
+    padding-top: 6.5%;
+    font-size: 50px;
+    color:rgb(247, 145, 0);
+
+  }
+  
+  .menu-sectiontitle {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-family: SpartanLimport;
+    color:rgb(247, 145, 0);
+
+  }
+  
+  .menu-describe {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    color: black;
+    font-size: 18px;
+    line-height: 1rem;
+  }
+  
+  .menu-subtitle {
+    text-align: center;
+   position: relative;
+   top: 20vh;
+    text-transform: uppercase;
+    font-family: Sora;
+    color: white;
+    font-weight: bolder;
+    font-size: 10vh;
+    margin: 0 auto;
+    color:rgb(247, 145, 0);
+
+
+  }
+
+  
+  .menu {
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .menu-section {
+    float: left;
+    background-color: white;
+    width: 25%;
+    padding: 2rem;
+    height: 420px;
+    z-index: 2;
+  }
+  
+  .menu-flip-card {
+    background-color: transparent;
+    width: 90%;
+    height: 105%;
+    perspective: 1000px;
+    z-index: 3;
+    margin: 0 auto;
+  }
+  
+  .menu-flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
+    background: none;
+  }
+  
+  .menu-flip-card:hover .menu-flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .menu-flip-card-front,
+  .menu-flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .menu-flip-card-front {
+    background:#EBE9D3;
+    color: black;
+  }
+  
+  .menu-flip-card-back {
+    background:#EBE9D3;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 5%;
+  }
+  
+  .menu-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .menu-text-Items {
+    font-family: SpartanLimport;
+    font-size: 2rem;
+    color:rgb(247, 145, 0);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .menu-text-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  .menu-text-title ul{
+    width: 100%;
+    margin: auto 0;
+  }
+  .menu-header-container {
+    display: inline-flex;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .menu-hr-container {
+    width: 100%;
+    height: 41px;
+    padding-top: 2.5%;
+  }
+  
+  .menu-hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-color: black;
+  }
+  
+  .menu-image {
+    height: 100%;
+    border-radius: 5%;
+  }
+  
+  .menu-circle-image {
+    width: 75px;
+  }
+  
+  .menu-button-on {
+    background-color:rgb(247, 145, 0);
+
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 10%;
+    transition: 0.5s;
+    box-shadow: none;
+    outline: none;
+  }
+  .menu-button-calender-on {
+    background-color:rgb(130, 125, 125);
+
+    border-radius: 20px;
+    border: 2px solid rgb(235, 213, 71);
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 50px;
+    transition: 1s;
+    padding: 30px;
+    opacity: .5;
+    color: white;
+    box-shadow: none;
+    
+    outline: none;
+  }
+  .menu-button-calender-download {
+    background-color:rgb(130, 125, 125);
+
+    border-radius: 20px;
+    border: 2px solid rgb(235, 213, 71);
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 30px;
+    transition: 1s;
+    padding: 20px;
+    opacity: .5;
+    color: white;
+    box-shadow: none;
+    
+    outline: none;
+  }  
+  .menu-button-calender-service {
+   
+  background-color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(235, 213, 71);
+    width: 80%;
+    margin-left: 60px;
+    margin-top: 30px;
+    padding: 50px;
+    color: rgb(4, 4, 4);
+    box-shadow: none;
+    position: relative;
+    outline: none;
+  }
+  .container-service {
+   
+    margin-top: 30px;
+    }
+
+    .menu-button-calender-insurance {
+   
+      background-color: white;
+        border-radius: 20px;
+        border: 2px solid rgb(235, 213, 71);
+        width: 80%;
+        margin-left: 60px;
+        margin-top: 30px;
+        color: rgb(4, 4, 4);
+        box-shadow: none;
+        position: relative;
+        outline: none;
+      }
+      .container-service {
+       
+        margin-top: 30px;
+        }
+        .menu-button-calender-phone {
+   
+          background-color: white;
+            border-radius: 20px;
+            border: 2px solid rgb(235, 213, 71);
+            width: 30%;
+            font-size: 30px;
+            margin-left: 350px;
+            margin-top: 30px;
+            color: rgb(4, 4, 4);
+            box-shadow: none;
+           
+            position: relative;
+            outline: none;
+          }
+          .container-service {
+           
+            margin-top: 30px;
+            }
+    .menu-button-calender-service2 {
+   
+      background-color: white;
+        border-radius: 20px;
+        border: 2px solid rgb(235, 213, 71);
+        width: 90%;
+        margin-left: 60px;
+        margin-top: 30px;
+        padding: 30px;
+        color: rgb(4, 4, 4);
+        box-shadow: none;
+        position: relative;
+        outline: none;
+      }
+      .container-service2 {
+       
+        margin-top: 20px;
+        }        
+    .menu-button-calender-book {
+   
+      background-color: white;
+        border-radius: 20px;
+        border: 2px solid rgb(235, 213, 71);
+        width: 80%;
+        margin-left: 60px;
+        
+        padding: 30px;
+        color: rgb(4, 4, 4);
+        box-shadow: none;
+        position: relative;
+        outline: none;
+      }
+      .container-book {
+       
+        margin-top: 30px;
+        }    
+  .menu-circle-image:hover {
+    cursor: pointer;
+  }
+  
+  .menu-button-off {
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 10%;
+    outline: none;
+    transition: 0.5s;
+    box-shadow: 2px 2px 8px rgb(163, 177, 198, 0.6), -2px -2px 12px rgba(255, 255, 255, 0.5);
+    ;
+  }
+  
+  
+  
+  .menu-drinks-on {
+    position: absolute;
+    visibility: visible;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu-drinks-off {
+    position: absolute;
+    visibility: hidden;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu-snacks-off {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu-snacks-on {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  fieldset {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 50%;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 70%;
+    height: 100%;
+    position: relative;
+    align-content: left;
+  }
+  
+  .slider-social {
+    height: 18px;
+  
+    padding-right: 10px;
+  }
+  
+  .social {
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-left: 220px;
+  }
+  
+  .social2 {
+    float: right;
+    padding: 0;
+    margin: 0;
+    margin-right: 215px;
+  }
+  
+  .slider-social2 {
+    height: 18px;
+    float: right;
+    margin-right: 190px;
+    padding-right: 10px;
+  }
+  
+  .about-info-slider {
+    float: left;
+    width: 50%;
+    padding-top: 2rem;
+    background-color: white;
+    padding-left: 2rem;
+    ;
+  }
+  
+  .slider-img1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: right;
+  }
+  
+  .slider-img2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+  }
+  
+  .slider-name1 {
+    color: #bd1220;
+    font-family: RalewayELimport;
+    float: right;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+  }
+  
+  .slider-name2 {
+    color: #bd1220;
+    font-family: RalewayELimport;
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+  }
+  
+  .p2 {
+    text-align: right;
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+  
+  .p1 {
+    text-align: left;
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+  
+  .slides-hr {
+    margin-top: -5px;
+    margin-right: 15px;
+    border: 0;
+    border-top: 1px solid #bd1220;
+    border-color: #bd1220;
+    width: 200px;
+    float: right;
+  }
+  
+  .slides-hr1 {
+    margin-top: -5px;
+    margin-left: 15px;
+    border: 0;
+    border-top: 1px solid #bd1220;
+    border-color: #bd1220;
+    width: 200px;
+    float: left;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  /* The dots/bullets/indicators */
+  
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot:hover {
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #bd1220;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+  
+    to {
+      opacity: 1
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+  
+    to {
+      opacity: 1
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+   
+    .menu-button-on {
+      width: 50%;
+      border: none;
+      border-radius: 40%;
+
+    }
+    
+    .menu-circle-image{
+width: 100%;
+    }
+    
+    .menu-button-off {
+      width: 50%;
+      border: none;
+      border-radius: 40%;
+
+    
+    }
+    
+  
+    /* Adjust container width */
+    .container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    /* Adjust header font size */
+    header h1 {
+      font-size: 24px;
+    }
+  
+    /* Adjust paragraph font size */
+    p {
+      font-size: 16px;
+    }
+  
+    /* Center align images */
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Adjust navigation menu */
+    nav ul {
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+  
+  
+  
+    /* Adjust menu header buttons */
+    .menu-header-container {
+      text-align: center;
+    }
+  
+    .menu-header-container button {
+      margin: 0 5px;
+    }
+  
+    /* Adjust menu sections */
+    .menu-section {
+      width: 100%;
+    }
+  
+    .menu-flip-card-inner {
+      width: 100%;
+    }
+  
+    .menu-flip-card-back ul {
+      padding-left: 10px;
+    }
+  
+    .menu-flip-card-back ul li {
+      list-style-type: none;
+      margin-bottom: 5px;
+      font-size: 1 rem;
+    }
+  
+    .menu-image {
+      max-width: 100%;
+    }
+  
+    
+    .menu-subtitle {
+      width: 90vw;
+      top: 10vh;
+      font-size: 45px;
+    
+    }
+    .menu-subtitle img{
+      display: inline;
+      height: 80px;
+    
+    }
+  
+    
+  }
+
+
+  .menu-flip-card.hover-effect .menu-flip-card-inner {
+    transform: rotateY(180deg);
+}
+.menu-flip-card-back ul {
+  width: 100%; /* Set width to 100% */
+  padding-left: 0; /* Remove padding */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column;
+  color:rgb(247, 145, 0);
+  align-items: left; /* Align items vertically */
+}
+
+.menu-flip-card-back ul li {
+  list-style-type: none;
+  text-align: left; /* Center align text */
+}
+.menu-text-title li {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 5px 0;
+  line-height: 1 rem;
+  font-size: 1 rem;
+  margin: 0 auto;
+}
+
+.menu-text-title .item__dots {
+  flex: 1;
+  border-bottom: 1px dashed #aaa;
+  margin: 0 10px;
+}
